@@ -50,7 +50,7 @@ function handleParticles(){
 function createParticle(){
     if(activeButton==1){
         let size = Math.random()*20+5;
-        let x =Math.random()*(60)+image.getBoundingClientRect().x+size+7;
+        let x =Math.random()*(60)+image.getBoundingClientRect().x+size+14;
         let y = Number(image.getBoundingClientRect().y)+7;
         smokeArray.push(new Particle(x,y,size));
     }
@@ -139,6 +139,7 @@ function clickedSmoke(){
             image.style.opacity='0.7';
             discordLink.style.display='block';
             discordLink.style.animation='fadeInBtn 2s';
+            canvas.style.filter='blur(50px) contrast(5)';
         },3000);
 }}
 function animate(){
