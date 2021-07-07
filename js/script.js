@@ -57,7 +57,7 @@ function createParticle(){
 }
 function finalSmoke(){
     if(activeButton==-3){
-        let size = Math.random()*40+10;
+        let size = Math.random()*20+10;
         let x =Math.random()*(canvas.width-2*size)+size;
         let y = canvas.height-10;
         let fire = new Particle(x,10,size);
