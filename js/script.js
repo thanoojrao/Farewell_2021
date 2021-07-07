@@ -59,8 +59,8 @@ function finalSmoke(){
     if(activeButton==-3){
         let size = Math.random()*20+10;
         let x =Math.random()*(canvas.width-2*size)+size;
-        let y = canvas.height-10;
-        let smoke = new Particle(x,10,size);
+        let y = canvas.height-20;
+        let smoke = new Particle(x,20,size);
         smoke.weight = -smoke.weight;
         smokeArray.push(smoke);
         particlesArray.push(new Particle(x,y,size));
