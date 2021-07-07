@@ -33,7 +33,7 @@ function handleParticles(){
     for(let i=0;i<particlesArray.length;i++){
         particlesArray[i].update();
         particlesArray[i].draw('orange');
-        if(particlesArray[i].size<=1){
+        if(particlesArray[i].size<=0.25){
             particlesArray.splice(i,1);
             i--;
         }
@@ -57,10 +57,10 @@ function createParticle(){
 }
 function finalSmoke(){
     if(activeButton==-3){
-        let size = Math.random()*25+10;
+        let size = Math.random()*45+10;
         let x =Math.random()*(canvas.width-2*size)+size;
-        let y = canvas.height-20;
-        let fire = new Particle(x,20,size);
+        let y = Math.random()*(canvas.height-2*size)+size;
+        let fire = new Particle(x,y,size);
         fire.weight = -fire.weight;
         particlesArray.push(fire);
     }
