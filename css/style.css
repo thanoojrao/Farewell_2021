@@ -56,14 +56,14 @@ a{
     top:40%;
     left: 50%;
     transform: translate(-50%,-50%);
-    height: 40vh;
+    height: 60vh;
     width: auto;
 }
 #eyes{
     position: absolute;
     top: 55%;
     left: 50%;
-    height: 30vh;
+    height: 25vh;
     width: auto;
     transform: translate(-50%,0);
     filter: invert(70%);
