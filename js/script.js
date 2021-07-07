@@ -50,7 +50,7 @@ function handleParticles(){
 function createParticle(){
     if(activeButton==1){
         let size = Math.random()*20+5;
-        let x =Math.random()*(60)+image.getBoundingClientRect().x+size;
+        let x =Math.random()*(60)+image.getBoundingClientRect().x+size+7;
         let y = Number(image.getBoundingClientRect().y)+7;
         smokeArray.push(new Particle(x,y,size));
     }
@@ -60,10 +60,10 @@ function finalSmoke(){
         let size = Math.random()*20+10;
         let x =Math.random()*(canvas.width-2*size)+size;
         let y = canvas.height-10;
-        let fire = new Particle(x,10,size);
-        fire.weight = -fire.weight;
-        particlesArray.push(fire);
-        smokeArray.push(new Particle(x,y,size));
+        let smoke = new Particle(x,10,size);
+        smoke.weight = -fire.weight;
+        smokeArray.push(smoke);
+        particlesArray.push(new Particle(x,y,size));
     }
 }
 
