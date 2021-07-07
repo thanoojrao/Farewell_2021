@@ -61,7 +61,7 @@ function finalSmoke(){
         let x =Math.random()*(canvas.width-2*size)+size;
         let y = canvas.height-10;
         let smoke = new Particle(x,10,size);
-        smoke.weight = -fire.weight;
+        smoke.weight = -smoke.weight;
         smokeArray.push(smoke);
         particlesArray.push(new Particle(x,y,size));
     }
