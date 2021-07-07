@@ -40,7 +40,7 @@ function handleParticles(){
     }
     for(let i=0;i<smokeArray.length;i++){
         smokeArray[i].update();
-        smokeArray[i].draw('rgb(168, 165, 165)');
+        smokeArray[i].draw('gray');
         if(smokeArray[i].size<=1){
             smokeArray.splice(i,1);
             i--;
