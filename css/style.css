@@ -21,7 +21,7 @@ a{
 }
 #canvas1{
     background: black;
-    filter: blur(100px) contrast(5);
+    filter: blur(10px) contrast(5);
 }
 .button{
     position: relative;
