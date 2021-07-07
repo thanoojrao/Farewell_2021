@@ -72,12 +72,10 @@ a{
 
 @keyframes fadeIn{
     0%{
-        top: 60vh;
         opacity: 0;
         height: 0vh;
     }
     100%{
-        top: 55vh;
         opacity: 1;
         height: 30vh;
     }
